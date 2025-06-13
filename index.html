@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO Webサイト運用マニュアル</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>STUDIO Webサイト運用マニュアル</h1>
+            <button id="menu-toggle" aria-label="メニュー">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <nav id="sidebar">
+            <div class="nav-header">
+                <h2>目次</h2>
+                <button id="close-menu" aria-label="閉じる">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul>
+                <li><a href="#intro">はじめに</a></li>
+                <li><a href="#login">1. STUDIOへのログイン方法</a></li>
+                <li><a href="#editor">2. 編集画面の開き方</a></li>
+                <li><a href="#text">3. テキストの修正方法</a></li>
+                <li><a href="#image">4. 画像の差し替え方法</a></li>
+                <li><a href="#link">5. リンクの設定・変更方法</a></li>
+                <li><a href="#cms">6. CMS（コレクション）の使い方</a></li>
+                <li><a href="#publish">7. 公開・更新方法</a></li>
+                <li><a href="#trouble">8. よくあるトラブルと対応</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="intro" class="container main-section">
+                <h2>はじめに</h2>
+                <p>このマニュアルは、STUDIOで作成されたWebサイトの運用・編集をサポートするために作成されました。本マニュアルを参照することで、お客様ご自身でWebサイトの更新や修正を簡単に行うことができます。</p>
+            </section>
+
+            <section id="login" class="container main-section">
+                <h2>1. STUDIOへのログイン方法</h2>
+                
+                <h3>1.1. STUDIOログインページへのアクセス</h3>
+                <p>Webブラウザを開き、以下のURLにアクセスしてください。</p>
+                <div class="code-block">
+                    <a href="https://studio.design/ja" target="_blank">https://studio.design/ja</a>
+                </div>
+
+                <h3>1.2. ログイン情報の入力</h3>
+                <p>ログインページにアクセスすると、以下の画面が表示されます。登録済みのメールアドレスとパスワードを入力し、「ログイン」ボタンをクリックしてください。</p>
+    
+                
+                <ul>
+                    <li><strong>メールアドレス</strong>: ご登録のメールアドレスを入力します。</li>
+                    <li><strong>パスワード</strong>: ご登録のパスワードを入力します。</li>
+                </ul>
+            </section>
+
+            <section id="editor" class="container main-section">
+                <h2>2. 編集画面の開き方</h2>
+                
+                <p>ログイン後、STUDIOのダッシュボードが表示されます。ここから編集したいプロジェクトを選択し、編集画面を開きます。</p>
+                
+                <h3>2.1. プロジェクトの選択</h3>
+                <p>ダッシュボードには、お客様が管理されているプロジェクトの一覧が表示されます。編集したいWebサイトのプロジェクトをクリックしてください。</p>
+
+                <h3>2.2. エディタ（編集モード）とプレビューの違い</h3>
+                <p>プロジェクトを選択すると、通常はエディタ（編集モード）で開かれます。エディタでは、Webサイトのコンテンツを直接編集できます。変更内容を公開する前に、どのように表示されるかを確認したい場合は、プレビューモードを使用します。</p>
+                
+                <ul>
+                    <li><strong>エディタ（編集モード）</strong>: Webサイトのコンテンツを直接編集するためのモードです。テキストの入力、画像の差し替え、要素の配置など、すべての編集作業をここで行います。</li>
+                                    <div class="image-container">
+                    <img src="images/real/デザインエディタ画面.png" alt="STUDIOエディタ画面のスクリーンショット">
+                </div>
+                    <li><strong>プレビューモード</strong>: 編集中のWebサイトが、実際に公開された際にどのように見えるかを確認するためのモードです。このモードでは編集はできません。</li>
+                                    <div class="image-container">
+                    <img src="images/real/プレビュー画面.png" alt="STUDIOエディタ画面のスクリーンショット">
+                </div>
+                </ul>
+            </section>
+
+            <section id="text" class="container main-section">
+                <h2>3. テキストの修正方法</h2>
+                
+                <p>Webサイト上のテキストを修正する方法は非常に簡単です。以下の手順に従って操作してください。</p>
+                
+                <h3>3.1. テキストの選択と編集</h3>
+                <div class="step-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>編集したいテキストをクリック</h4>
+                            <p>エディタモードで、修正したい見出しや本文などのテキスト要素を直接クリックします。クリックすると、テキストが選択され、編集可能な状態になります。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>テキストの入力・修正</h4>
+                            <p>テキストボックスが表示されるので、新しいテキストを入力するか、既存のテキストを修正します。通常のテキストエディタと同じように操作できます。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>編集の確定</h4>
+                            <p>テキストの修正が完了したら、テキストボックスの外をクリックするか、Enterキーを押すことで編集が確定されます。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>3.2. 注意点</h3>
+                <div class="note-box">
+                    <ul>
+                        <li><strong>改行</strong>: テキストボックス内でEnterキーを押すと改行されます。段落を分けたい場合は、複数回Enterキーを押して行間を調整してください。</li>
+                        <li><strong>フォントサイズの変更</strong>: フォントサイズの変更は、通常、テキスト要素を選択した際に表示されるプロパティパネルで行います。デザインの一貫性を保つため、むやみにフォントサイズを変更しないことをお勧めします。Webサイト全体のデザインガイドラインに従ってください。</li>
+                        <li><strong>スタイルの適用</strong>: 見出しや本文など、あらかじめ設定されたスタイル（フォントの種類、色、太さなど）が適用されます。個別のテキストに異なるスタイルを適用すると、サイト全体のデザインが崩れる可能性がありますのでご注意ください。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="image" class="container main-section">
+                <h2>4. 画像の差し替え方法</h2>
+                
+                <p>Webサイト上の画像を新しい画像に差し替えることができます。以下の手順に従ってください。</p>
+                
+                <h3>4.1. 既存画像の選択と置換</h3>
+                <div class="step-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>差し替えたい画像をクリック</h4>
+                            <p>エディタモードで、差し替えたい画像要素を直接クリックします。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>「画像を置換」機能の選択</h4>
+                            <p>プロパティパネル内にある「画像を置換」または類似のボタンをクリックします。これにより、新しい画像をアップロードするためのダイアログが開きます。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>新しい画像のアップロード</h4>
+                            <p>ダイアログから、PCに保存されている新しい画像ファイルを選択し、アップロードします。アップロードが完了すると、選択した画像が元の画像と差し替えられます。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>4.2. アップロード可能な画像形式とサイズの目安</h3>
+                <p>STUDIOでアップロードできる画像形式は、主に以下の通りです。</p>
+                <div class="info-box">
+                    <ul>
+                        <li><strong>画像形式</strong>: JPEG (.jpg, .jpeg), PNG (.png), GIF (.gif), SVG (.svg)</li>
+                        <li><strong>サイズの目安</strong>: Webサイトの表示速度に影響するため、画像のファイルサイズはできるだけ軽量に（目安：500KB〜1MB以内推奨）することをお勧めします。また、画像の解像度は、Webサイトでの表示サイズに合わせて最適化することが望ましいです。</li>
+                    </ul>
+                </div>
+
+                <h3>4.3. モバイル版への反映確認ポイント</h3>
+                <p>画像を差し替えた後、必ずモバイル版の表示も確認してください。STUDIOはレスポンシブデザインに対応していますが、画像のサイズや配置によっては、モバイル表示でレイアウトが崩れる可能性があります。</p>
+                <ul>
+                    <li><strong>プレビューモードでの確認</strong>: エディタ上部のデバイス切り替えアイコン（PC、タブレット、スマートフォン）をクリックして、各デバイスでの表示を確認します。</li>
+                    <li><strong>表示の調整</strong>: もしモバイル表示で問題がある場合は、モバイル版専用の調整を行うか、元の画像サイズや配置を見直してください。</li>
+                </ul>
+            </section>
+
+            <section id="link" class="container main-section">
+                <h2>5. リンクの設定・変更方法</h2>
+                
+                <p>Webサイト内のテキストやボタンにリンクを設定することで、他のページや外部サイトへ誘導することができます。以下の手順でリンクを設定・変更します。</p>
+                
+                <h3>5.1. テキストやボタンにリンクを貼る手順</h3>
+                <div class="step-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>リンクを設定したい要素を選択</h4>
+                            <p>エディタモードで、リンクを設定したいテキスト（一部または全体）やボタン要素を直接クリックして選択します。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>リンク設定アイコンのクリック</h4>
+                            <p>選択した要素のプロパティパネル、またはツールバーに表示されるリンク設定アイコン（鎖のマークなど）をクリックします。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>リンク先の指定</h4>
+                            <p>リンク設定ダイアログが表示されます。ここにリンク先のURLを入力します。</p>
+                            <ul>
+                                <li><strong>外部リンク</strong>: 外部のWebサイトへリンクする場合、<code>https://example.com</code> のように完全なURLを入力します。</li>
+                                <li><strong>内部リンク</strong>: 自分のWebサイト内の他のページへリンクする場合、STUDIOのプロジェクト内のページを選択するか、<code>/about</code> のように相対パスを入力します。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>リンクの適用</h4>
+                            <p>URLを入力したら、「適用」または「設定」ボタンをクリックしてリンクを確定します。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>5.2. 外部リンク／内部リンクの設定方法</h3>
+                <div class="info-box">
+                    <ul>
+                        <li><strong>外部リンク</strong>: 外部サイトへのリンクは、新しいタブで開く設定にすることが一般的です。これにより、ユーザーがWebサイトから離れることなく、参照先の情報を確認できます。リンク設定ダイアログで「新しいタブで開く」などのオプションを有効にしてください。</li>
+                        <li><strong>内部リンク</strong>: 内部リンクは、通常同じタブで開きます。これにより、ユーザーはWebサイト内をスムーズに移動できます。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="cms" class="container main-section">
+                <h2>6. CMS（コレクション）の使い方</h2>
+                
+                <div class="note-box">
+                    <p><strong>注意</strong>: CMS（コレクション）が構築されている場合のみ</p>
+                </div>
+                
+                <p>STUDIOのCMS（コレクション）機能を使用すると、ブログ記事、実績、お知らせなどのコンテンツを効率的に管理・更新できます。ここでは、CMSの基本的な使い方を説明します。</p>
+                
+                <div class="image-container">
+                    <img src="images/real/CMS管理画面.png" alt="STUDIO CMS画面のスクリーンショット">
+                </div>
+                
+                <h3>6.1. 新しい記事や実績の追加方法</h3>
+                <div class="step-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>コレクションの選択</h4>
+                            <p>STUDIOのダッシュボードから、編集したいコレクション（例: 「ブログ」、「実績」など）を選択します。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>新規アイテムの追加</h4>
+                            <p>コレクションの管理画面で、「新規追加」または「+」ボタンをクリックします。これにより、新しいコンテンツアイテムの入力フォームが開きます。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>各フィールドの入力</h4>
+                            <p>開いたフォームには、コレクションで定義された様々なフィールド（例: タイトル、本文、画像、日付など）が表示されます。それぞれのフィールドに適切な情報を入力してください。</p>
+                            <ul>
+                                <li><strong>タイトル</strong>: 記事や実績のタイトルを入力します。</li>
+                                <li><strong>本文</strong>: 記事の本文を入力します。リッチテキストエディタが提供されている場合、文字の装飾や画像の挿入も可能です。</li>
+                                <li><strong>画像</strong>: 記事に関連する画像をアップロードします。画像の差し替え方法と同様に操作できます。</li>
+                                <li><strong>その他フィールド</strong>: 必要に応じて、カテゴリ、タグ、公開日などのフィールドを入力します。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>下書き保存</h4>
+                            <p>入力途中の場合は、「下書き保存」ボタンをクリックして、作業内容を一時保存できます。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>6.2. 公開／非公開の切り替え方法</h3>
+                <p>コンテンツアイテムの公開状態は、いつでも切り替えることができます。</p>
+                <div class="step-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>アイテムの選択</h4>
+                            <p>コレクションの管理画面で、公開状態を変更したいコンテンツアイテムを選択します。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>公開設定の変更</h4>
+                            <p>アイテムの編集画面、または一覧画面で、公開／非公開を切り替えるためのトグルスイッチやチェックボックスがあります。これを操作して、公開状態を変更します。</p>
+                            <ul>
+                                <li><strong>公開</strong>: Webサイト上にコンテンツが表示されます。</li>
+                                <li><strong>非公開</strong>: Webサイト上からコンテンツが非表示になります。下書きとして保存しておくことも可能です。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>変更の保存</h4>
+                            <p>公開設定を変更したら、必ず「保存」または「更新」ボタンをクリックして変更を確定してください。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note-box">
+                    <p><strong>CMSが構築されているか不明な場合</strong>: ご自身のWebサイトにCMS機能が搭載されているか不明な場合は、Webサイトの制作者にご確認ください。</p>
+                </div>
+            </section>
+
+            <section id="publish" class="container main-section">
+                <h2>7. 公開・更新方法</h2>
+                
+                <p>Webサイトの編集内容をインターネット上に公開するには、以下の手順で「公開」操作を行う必要があります。</p>
+                
+                <div class="image-container">
+                    <img src="images/real/公開設定画面.png" alt="STUDIO公開画面のスクリーンショット">
+                </div>
+                
+                <h3>7.1. 公開ボタンの位置と操作手順</h3>
+                <div class="step-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>公開ボタンの確認</h4>
+                            <p>エディタ画面の右上、または左上など、目立つ位置に「公開」または「Publish」と書かれたボタンがあります。このボタンをクリックします。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>公開確認ダイアログ</h4>
+                            <p>クリックすると、公開内容の確認や、最終確認を促すダイアログが表示される場合があります。変更内容に問題がないか確認し、「公開」または「Publish」を再度クリックして確定します。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>7.2. ドメインの設定が済んでいるかの確認</h3>
+                <p>Webサイトが正しく公開されるためには、事前にドメイン設定が完了している必要があります。もし、Webサイトが公開されない、または意図しないURLで表示される場合は、ドメイン設定に問題がある可能性があります。その際は、制作者またはSTUDIOのサポートにお問い合わせください。</p>
+
+                <h3>7.3. 公開後の反映タイミングについて</h3>
+                <div class="info-box">
+                    <p>公開ボタンをクリックした後、変更内容がインターネット上に反映されるまでには、通常数分から最大で数十分かかる場合があります。これは、STUDIOのサーバーが変更を処理し、世界中のキャッシュサーバーに反映させるための時間です。すぐに反映されない場合でも、しばらく時間をおいてから再度確認してください。</p>
+                </div>
+            </section>
+
+            <section id="trouble" class="container main-section">
+                <h2>8. よくあるトラブルと対応</h2>
+                
+                <p>STUDIOでのWebサイト運用中に発生しやすいトラブルとその対処法について説明します。</p>
+                
+                <h3>8.1. 編集内容が反映されない場合</h3>
+                <div class="trouble-box">
+                    <h4>原因</h4>
+                    <p>公開ボタンが押されていない、またはキャッシュが残っている可能性があります。</p>
+                    
+                    <h4>対処法</h4>
+                    <ol>
+                        <li><strong>公開ボタンの確認</strong>: 編集内容を保存した後、必ず「公開」ボタンをクリックしましたか？ 公開ボタンを押さないと、変更内容はインターネット上に反映されません。</li>
+                        <li><strong>ブラウザのキャッシュクリア</strong>: ご利用のWebブラウザに古い情報がキャッシュとして残っている場合があります。ブラウザのキャッシュをクリアしてから、再度Webサイトにアクセスしてみてください。</li>
+                        <li><strong>時間をおいて再確認</strong>: 公開処理には時間がかかる場合があります。数分から数十分待ってから、再度確認してください。</li>
+                    </ol>
+                </div>
+
+                <h3>8.2. 画像が表示されない場合</h3>
+                <div class="trouble-box">
+                    <h4>原因</h4>
+                    <p>画像ファイルの破損、サポートされていない形式、またはアップロードエラーの可能性があります。</p>
+                    
+                    <h4>対処法</h4>
+                    <ol>
+                        <li><strong>画像ファイルの確認</strong>: アップロードした画像ファイルが破損していないか、またSTUDIOがサポートしている画像形式（JPEG, PNG, GIF, SVG）であるかを確認してください。</li>
+                        <li><strong>再アップロード</strong>: 一度画像を削除し、再度アップロードしてみてください。</li>
+                        <li><strong>ファイルサイズ</strong>: 画像のファイルサイズが大きすぎると、表示に時間がかかったり、正しく表示されない場合があります。画像を最適化し、ファイルサイズを小さくしてから再度アップロードしてください。</li>
+                    </ol>
+                </div>
+
+                <h3>8.3. モバイル表示が崩れたときの対処法（簡易）</h3>
+                <div class="trouble-box">
+                    <h4>原因</h4>
+                    <p>レスポンシブデザインの調整不足、または特定の要素がモバイル表示に適していない可能性があります。</p>
+                    
+                    <h4>対処法</h4>
+                    <ol>
+                        <li><strong>プレビューモードでの確認</strong>: STUDIOのエディタで、モバイル表示のプレビューを確認し、どの部分が崩れているかを特定します。</li>
+                        <li><strong>要素の調整</strong>: 崩れている要素を選択し、プロパティパネルでモバイル表示時のサイズや配置を調整します。必要に応じて、モバイル専用の表示設定を行うことも可能です。</li>
+                        <li><strong>制作者への連絡</strong>: 複雑なレイアウトの崩れや、ご自身での解決が難しい場合は、制作者に連絡し、サポートを依頼してください。</li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 STUDIO Webサイト運用マニュアル</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
